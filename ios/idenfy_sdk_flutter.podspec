@@ -14,8 +14,12 @@ iDenfy SDK for Flutter
   s.author           = { 'iDenfy' => 'techsupport@idenfy.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
+  s.resources = 'Assets/*'
   s.dependency 'Flutter'
   s.dependency 'iDenfySDK/iDenfyLiveness', '6.7.0'
+  s.dependency 'SnapKit'
+  s.dependency 'RxCocoa'
+  s.dependency 'RxSwift'
   s.platform = :ios, '9.0'
 
   # Flutter.framework does not contain a i386 slice.
