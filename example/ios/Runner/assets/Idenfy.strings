@@ -141,7 +141,7 @@
 "idenfy_confirmation_view_document_steps_step_passport_cover_title_v2" = "Passport cover photo";
 "idenfy_confirmation_view_document_steps_step_utility_bill_title_v2" = "Utility bill photo";
 "idenfy_confirmation_view_upload_image_title_v2" = "You can upload photos in every step";
-"idenfy_confirmation_view_begin_identification_title_v2" = "BEGIN IDENTIFICATION";
+"idenfy_confirmation_view_begin_identification_title_v2" = "Begin Identification";
 
 /*Idenfy Document Camera Preview Session View V2*/
 "idenfy_document_camera_preview_session_view_information_step_front_document_type_id_card_title_v2" = "Front of identity card";

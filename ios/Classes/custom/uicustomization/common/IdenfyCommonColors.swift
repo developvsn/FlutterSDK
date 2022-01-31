@@ -12,7 +12,7 @@ public struct IdenfyCommonColors {
     public static var idenfyWhite = UIColor.white
     public static var idenfyBlack = UIColor.black
     public static var idenfyDrawerBackgroundColor = UIColor.black.withAlphaComponent(0.6)
-    public static var idenfyBackgroundColorV2 = UIColor(hexString: "#FBFBFB")
+    public static var idenfyBackgroundColorV2 = UIColor(hexString: "#FFFFFF")
     public static var idenfyMainColorV2 = UIColor(hexString: "#161617")
     public static var idenfyMainDarkerColorV2 = UIColor(hexString: "#161617")
     public static var idenfySecondColorV2 = UIColor(hexString: "#161617")

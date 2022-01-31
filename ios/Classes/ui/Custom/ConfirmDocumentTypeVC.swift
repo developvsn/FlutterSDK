@@ -522,10 +522,10 @@ class ConfirmDocumentTypeVC: UIViewController {
             .build()
 
        
-        idenfyController.initializeIdenfySDKV2WithManual(idenfySettingsV2: idenfySettingsV2, idenfyViewsV2: idenfyViewsV2)
-        let idenfyVC = idenfyController.instantiateNavigationController()
-
-        present(idenfyVC, animated: true, completion: nil)
+//        idenfyController.initializeIdenfySDKV2WithManual(idenfySettingsV2: idenfySettingsV2, idenfyViewsV2: idenfyViewsV2)
+//        let idenfyVC = idenfyController.instantiateNavigationController()
+//
+//        present(idenfyVC, animated: true, completion: nil)
     }
     
 
