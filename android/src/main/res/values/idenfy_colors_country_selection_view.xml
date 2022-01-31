@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="idenfyCountrySelectionViewBackgroundColor">@color/idenfyBackgroundColorV2</color>
+    <color name="idenfyCountrySelectionViewTitleTextColor">@color/idenfySecondColorV2</color>
+    <color name="idenfyCountrySelectionViewDescriptionTextColor">@color/idenfySecondColorV2</color>
+    <color name="idenfyCountrySelectionViewCountrySearchBarBackgroundColor">@color/idenfyWhite
+    </color>
+    <color name="idenfyCountrySelectionViewCountrySearchBarHighlightedTextColor">
+        @color/idenfySecondColorV2
+    </color>
+    <color name="idenfyCountrySelectionViewCountrySearchBarTextColor">
+        @color/idenfySecondColor50percentV2
+    </color>
+    <color name="idenfyCountrySelectionViewCountryRecyclerViewBackgroundColor">@color/idenfyWhite
+    </color>
+    <color name="idenfyCountrySelectionViewCountryRecyclerViewBorderColor">
+        #E8EAF0
+    </color>
+    <color name="idenfyCountrySelectionViewCountryRecyclerViewItemBackgroundColor">
+        @color/idenfyWhite
+    </color>
+    <color name="idenfyCountrySelectionViewCountryRecyclerViewItemBorderColor">
+        #E8EAF0
+    </color>
+    <color name="idenfyCountrySelectionViewCountryRecyclerViewItemTextColor">
+        @color/idenfySecondColorV2
+    </color>
+    <color name="idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedTextColor">
+        #494949
+    </color>
+    <color name="idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor">
+        @color/idenfyWhite
+    </color>
+    <color name="idenfyCountryViewSelectionCountrySearchBarBorderColor">
+        @color/idenfySecondColor6percentV2
+    </color>
+
+</resources>

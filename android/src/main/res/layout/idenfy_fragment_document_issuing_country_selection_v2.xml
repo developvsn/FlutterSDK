@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <include layout="@layout/idenfy_partial_layout_common_appbarlayout_with_language_selection_v2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/idenfy_constraintlayout_common_information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.idenfy.idenfySdk.uicomponents.IDenfyTextView
+            android:id="@+id/idenfy_textview_common_information_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/sfpro_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.idenfy.idenfySdk.uicomponents.IDenfyTextView
+            android:id="@+id/idenfy_textview_common_information_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfpro_regular"
+            android:textColor="#494949"
+            app:layout_constraintStart_toStartOf="@+id/idenfy_textview_common_information_title"
+            app:layout_constraintTop_toBottomOf="@+id/idenfy_textview_common_information_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="12sp"
+        android:textColor="#ADAEAF"
+        android:text="Document's country"
+        android:fontFamily="@font/sfpro_regular"
+        app:layout_constraintBottom_toTopOf="@+id/idenfy_searchview_issuing_country_selection_select_country"
+        />
+
+    <com.idenfy.idenfySdk.uicomponents.IDenfyTextView
+        android:id="@+id/idenfy_textview_issuing_country_selection_select_country_hint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:visibility="invisible"
+        android:text="@string/idenfy_country_selection_view_searchbar_hint_v2"
+        android:textSize="0sp"
+        app:customfont="hkgrotesk_regular.ttf"
+        app:layout_constraintBottom_toBottomOf="@+id/idenfy_searchview_issuing_country_selection_select_country"
+        app:layout_constraintEnd_toEndOf="@+id/idenfy_searchview_issuing_country_selection_select_country"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/idenfy_searchview_issuing_country_selection_select_country"
+        app:layout_constraintTop_toTopOf="@+id/idenfy_searchview_issuing_country_selection_select_country" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/idenfy_searchview_issuing_country_selection_select_country"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/borderbottom"
+        android:textColorPrimary="#161617"
+        app:closeIcon="@null"
+        android:theme="@style/AppTheme.SearchView"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="@+id/idenfy_recyclerview_issuing_country_selection_select"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/idenfy_recyclerview_issuing_country_selection_select"
+        app:layout_constraintTop_toBottomOf="@+id/idenfy_constraintlayout_common_information"
+        app:queryBackground="@android:color/transparent"
+        app:searchIcon="@drawable/nothing_drawed"
+        android:searchHintIcon="@drawable/nothing_drawed"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/idenfy_imageview_issuing_country_selection_select_country_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="invisible"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toBottomOf="@+id/idenfy_textview_issuing_country_selection_select_country_hint"
+        app:layout_constraintEnd_toEndOf="@+id/idenfy_recyclerview_issuing_country_selection_select"
+        app:layout_constraintTop_toTopOf="@+id/idenfy_textview_issuing_country_selection_select_country_hint"
+        app:srcCompat="@drawable/nothing_drawed" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idenfy_recyclerview_issuing_country_selection_select"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="1"
+        android:background="@drawable/country_recycler_background"
+        android:overScrollMode="never"
+        android:splitMotionEvents="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idenfy_searchview_issuing_country_selection_select_country"
+        android:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/idenfy_constraintlayout_issuing_country_selection_mask"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="@+id/idenfy_recyclerview_issuing_country_selection_select"
+        app:layout_constraintEnd_toEndOf="@+id/idenfy_recyclerview_issuing_country_selection_select"
+        app:layout_constraintStart_toStartOf="@+id/idenfy_recyclerview_issuing_country_selection_select"
+        app:layout_constraintTop_toTopOf="@+id/idenfy_recyclerview_issuing_country_selection_select" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

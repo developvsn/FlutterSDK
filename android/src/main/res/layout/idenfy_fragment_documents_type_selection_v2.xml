@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <include layout="@layout/idenfy_partial_layout_common_appbarlayout_with_language_selection_v2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/idenfy_constraintlayout_common_information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.idenfy.idenfySdk.uicomponents.IDenfyTextView
+            android:id="@+id/idenfy_textview_common_information_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/sfpro_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.idenfy.idenfySdk.uicomponents.IDenfyTextView
+            android:id="@+id/idenfy_textview_common_information_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfpro_regular"
+            android:textColor="#494949"
+            app:layout_constraintStart_toStartOf="@+id/idenfy_textview_common_information_title"
+            app:layout_constraintTop_toBottomOf="@+id/idenfy_textview_common_information_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idenfy_recyclerview_documents_selection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:splitMotionEvents="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idenfy_constraintlayout_common_information"
+        app:layout_constraintVertical_bias="0.0"
+        tools:itemCount="2"
+        tools:listitem="@layout/idenfy_item_documents_type_selection_v2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/idenfy_constraintlayout_documents_selection_recycler_view_mask"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idenfy_recyclerview_documents_selection"
+        app:layout_constraintStart_toStartOf="@+id/idenfy_recyclerview_documents_selection"
+        app:layout_constraintTop_toTopOf="@+id/idenfy_recyclerview_documents_selection" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

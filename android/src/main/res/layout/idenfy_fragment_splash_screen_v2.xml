@@ -1,0 +1,88 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="-10dp"-->
+<!--        android:layout_marginBottom="-10dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:cropToPadding="false"-->
+<!--        android:scaleType="center"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/idenfy_ic_gradient_splash_screen_background_drawable_v2" />-->
+
+
+    <ImageView
+        android:id="@+id/idenfy_imageview_splash_screen_icon"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ronary_logo"
+        android:visibility="gone"
+        />
+<!--    <ImageView-->
+<!--        android:id="@+id/idenfy_imageview_splash_screen_icon"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/idenfy_guideline_splash_screen_horizontal_38"-->
+<!--        app:srcCompat="@drawable/idenfy_ic_splash_screen_icon_drawable_v2" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_scale="0.4"
+        app:lottie_rawRes="@raw/lottie_ronary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/idenfy_guideline_splash_screen_horizontal_38"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_percent="0.38" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/idenfy_guideline_splash_screen_horizontal_65"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_percent="0.65" />-->
+
+<!--    <com.idenfy.idenfySdk.uicomponents.IDenfyTextView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginLeft="24dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:layout_marginRight="24dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/idenfy_splash_screen_title_v2"-->
+<!--        android:textAlignment="center"-->
+<!--        android:theme="@style/idenfySplashScreenDescriptionTextStyle"-->
+<!--        android:visibility="visible"-->
+<!--        app:customfont="hkgrotesk_regular.ttf"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/idenfy_guideline_splash_screen_horizontal_65" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
