@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-@objc open class IdenfyCountrySelectionViewUISettingsV2: NSObject {
+@objc open class IdenfyCountrySelectionViewUISettingsV3: NSObject {
     // Idenfy Country Selection View Colors
 
     public static var idenfyCountrySelectionViewBackgroundColor = IdenfyCommonColors.idenfyBackgroundColorV2

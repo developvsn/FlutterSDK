@@ -70,19 +70,19 @@ import SnapKit
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.bounces = false
-        tableView.rowHeight = 65
+        tableView.rowHeight = 66
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
         tableView.allowsMultipleSelection = false
         tableView.allowsSelectionDuringEditing = false
         tableView.allowsMultipleSelectionDuringEditing = false
-        tableView.backgroundColor = IdenfyDocumentSelectionViewUISettingsV2.idenfyDocumentSelectionViewDocumentTableViewBackgroundColor
+        tableView.backgroundColor = .white
         tableView.showsVerticalScrollIndicator = false
         return tableView
     }()
 
     open func setupConstraints() {
-        backgroundColor = IdenfyDocumentSelectionViewUISettingsV2.idenfyDocumentSelectionViewBackgroundColor
+        backgroundColor = .white
         setupToolbar()
         setupTopTitle()
         setupDocumentTableView()
@@ -122,7 +122,6 @@ import SnapKit
         documentTableView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
-            make.height.equalTo(250)
             make.top.equalTo(emptyArea.snp.top).offset(32)
         }
 //        documentTableView.leftAnchor.constraint(equalTo: safeLeftAnchor, constant: 24).isActive = true
@@ -190,13 +189,19 @@ import SnapKit
     }
 
     open func setupView() {
+        let mScreenSize = UIScreen.main.bounds
+            let mSeparatorHeight = CGFloat(10.0) // Change height of speatator as you want
+            let mAddSeparator = UIView.init(frame: CGRect(x: 0, y: 0, width: mScreenSize.width, height: mSeparatorHeight))
+            mAddSeparator.backgroundColor = UIColor.white // Change backgroundColor of separator
+        addSubview(mAddSeparator)
+        
         addSubview(fullView)
         
         fullView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
+            make.top.equalToSuperview().offset(10)
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
-            make.height.equalTo(55)
+            make.height.equalTo(54)
         }
         
         fullView.addSubview(documentImageView)
@@ -223,6 +228,7 @@ import SnapKit
         fullView.layer.borderWidth = 1
         fullView.layer.borderColor = "EDEDED".hexColor.cgColor//UIColor.black.cgColor
         
+      
 //        documentLabel.leftAnchor.constraint(equalTo: documentImageView.leftAnchor, constant: 16).isActive = true
 //        documentLabel.topAnchor.constraint(equalTo: safeTopAnchor).isActive = true
 //        documentLabel.bottomAnchor.constraint(equalTo: safeBottomAnchor).isActive = true

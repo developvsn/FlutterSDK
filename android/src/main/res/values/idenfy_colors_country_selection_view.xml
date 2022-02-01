@@ -30,7 +30,7 @@
         #494949
     </color>
     <color name="idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor">
-        @color/idenfyWhite
+        @android:color/transparent
     </color>
     <color name="idenfyCountryViewSelectionCountrySearchBarBorderColor">
         @color/idenfySecondColor6percentV2

@@ -29,7 +29,7 @@ import SnapKit
         toolbar.languageSelectionButton.setImage(UIImage(), for: .normal)
         toolbar.backButton.setImage("back".image, for: .normal)
         toolbar.logo.image = UIImage()
-        toolbar.backgroundColor = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewBackgroundColor
+        toolbar.backgroundColor = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewBackgroundColor
         toolbar.toolbarView.layer.shadowColor = IdenfyToolbarUISettingsV2.idenfyDefaultToolbarShadowColor.cgColor
         toolbar.toolbarView.layer.shadowOpacity = IdenfyToolbarUISettingsV2.idenfyDefaultToolbarShadowOpacity
         toolbar.toolbarView.layer.shadowRadius = IdenfyToolbarUISettingsV2.idenfyDefaultToolbarShadowRadius
@@ -44,7 +44,7 @@ import SnapKit
         label.numberOfLines = 0
         label.font = .systemFont(ofSize: 24, weight: .medium)
         label.textAlignment = .left
-        label.textColor = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewTitleTextColor
+        label.textColor = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewTitleTextColor
         return label
     }()
 
@@ -80,7 +80,7 @@ import SnapKit
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = "#FFFFFF".hexColor
-        label.font = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewSearchBarHintFont
+        label.font = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewSearchBarHintFont
         return label
     }()
 
@@ -91,12 +91,12 @@ import SnapKit
         searchBar.setPositionAdjustment(UIOffset(horizontal: -10, vertical: 0), for: .search)
         let textField = searchBar.value(forKey: "searchField") as? UITextField
         textField?.clearButtonMode = .never
-        textField?.backgroundColor = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountrySearchBarBackgroundColor
-        textField?.textColor = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountrySearchBarTextColor
+        textField?.backgroundColor = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewCountrySearchBarBackgroundColor
+        textField?.textColor = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewCountrySearchBarTextColor
         textField?.font = .systemFont(ofSize: 14, weight: .regular)
         searchBar.semanticContentAttribute = .forceLeftToRight
-        searchBar.barTintColor = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountrySearchBarBackgroundColor
-        searchBar.backgroundColor = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountrySearchBarBackgroundColor
+        searchBar.barTintColor = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewCountrySearchBarBackgroundColor
+        searchBar.backgroundColor = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewCountrySearchBarBackgroundColor
         searchBar.backgroundImage = UIImage()
 //        searchBar.layer.cornerRadius = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountrySearchBarCorderRadius
 //        searchBar.layer.borderWidth = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountrySearchBarBorderWidth
@@ -132,7 +132,7 @@ import SnapKit
         tableView.allowsMultipleSelection = false
         tableView.allowsSelectionDuringEditing = false
         tableView.allowsMultipleSelectionDuringEditing = false
-        tableView.backgroundColor = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountryTableViewBackgroundColor
+        tableView.backgroundColor = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewCountryTableViewBackgroundColor
         tableView.showsVerticalScrollIndicator = false
         tableView.layer.cornerRadius = 6
         tableView.layer.borderWidth = 1
@@ -141,7 +141,7 @@ import SnapKit
     }()
 
     open func setupConstraints() {
-        backgroundColor = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewBackgroundColor
+        backgroundColor = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewBackgroundColor
         setupToolbar()
         setupTopTitle()
         setupSearchBar()
@@ -266,7 +266,7 @@ import SnapKit
         imageView.contentMode = .scaleAspectFill
         imageView.isOpaque = true
         imageView.layer.masksToBounds = true
-        imageView.layer.borderWidth = IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountryFlagBorderWidth
+        imageView.layer.borderWidth = IdenfyCountrySelectionViewUISettingsV3.idenfyCountrySelectionViewCountryFlagBorderWidth
         imageView.layer.borderColor = UIColor.black.cgColor
         return imageView
     }()

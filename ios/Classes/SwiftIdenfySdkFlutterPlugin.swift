@@ -81,6 +81,25 @@ public class SwiftIdenfySdkFlutterPlugin: NSObject, FlutterPlugin {
                     .build()
                 
                 
+		
+
+
+
+
+
+
+
+IdenfyDocumentSelectionViewUISettingsV2.idenfyDocumentSelectionViewDocumentTableViewCellHighlightedBackgroundColor = UIColor(white: 1, alpha: 0.0)
+        IdenfyDocumentSelectionViewUISettingsV2.idenfyDocumentSelectionViewBackgroundColor = .white
+        IdenfyDocumentSelectionViewUISettingsV2.idenfyDocumentSelectionViewDocumentTableViewCellHeight = 66
+        IdenfyDocumentSelectionViewUISettingsV2.idenfyDocumentSelectionViewDocumentTypeHighlightedFont = .systemFont(ofSize: 16, weight: .semibold)
+        IdenfyDocumentSelectionViewUISettingsV2.idenfyDocumentSelectionViewDocumentTypeFont = .systemFont(ofSize: 16, weight: .medium)
+        IdenfyDocumentSelectionViewUISettingsV2.idenfyDocumentSelectionViewDocumentTableViewCellHighlightedTextColor = "161617".hexColor
+        
+        IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountryTableViewCellHighlightedTextColor = "#494949".hexColor
+        IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountryTableViewHighlightedCellFont = .systemFont(ofSize: 14, weight: .semibold)
+        IdenfyCountrySelectionViewUISettingsV2.idenfyCountrySelectionViewCountryTableViewCellHighlightedBackgroundColor = UIColor(white: 1, alpha: 0.0)
+
 
                 let idenfySettingsV2 = IdenfyBuilderV2()
                     .withAuthToken(authToken)

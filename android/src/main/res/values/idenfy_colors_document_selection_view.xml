@@ -20,7 +20,7 @@
         #161617
     </color>
     <color name="idenfyDocumentSelectionViewRecyclerViewItemHighlightedBackgroundColor">
-        @color/idenfyWhite
+        @android:color/transparent
     </color>
 
 </resources>
