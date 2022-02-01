@@ -2,6 +2,7 @@ import Flutter
 import UIKit
 import iDenfySDK
 import idenfycore
+import idenfyviews
 import IdenfyLiveness
 import FaceTecSDK
 
